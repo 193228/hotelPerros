@@ -5,4 +5,10 @@ block content
     link(rel='stylesheet', href='/stylesheets/Habitaciones/habitacion.css')
 
     .principal
-        .box1
+        each sql in data
+            .habitaciones
+                p#nombre #{sql.nombre}
+                br
+                p#descripcion #{sql.descripcion}
+                br
+                p#precio #{sql.costo+sql.codigoMoneda}

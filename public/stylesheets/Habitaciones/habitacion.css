@@ -11,10 +11,23 @@
     top: 20%;
 }
 
-.box1{
-    position: absolute;
-    margin: 80px;
-    width: 28%;
-    height: 40%;
-    background-color: red;
+.habitaciones{
+    display: inline-grid;
+    padding: 10px;
+    margin-top: 14%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 20%;
+    height: 30%;
+    grid-auto-rows: auto;
+    text-align: center;
+    overflow: auto;
+}
+
+#descripcion{
+    color: #FFFFFF;
+}
+
+#precio{
+    color: #FF0000;
 }
