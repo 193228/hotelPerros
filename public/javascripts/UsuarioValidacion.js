@@ -15,9 +15,9 @@ function agregarUsuario(req,res,password,newUser) {
 function agregarUsuario_action(req,res,newUser) {
     userDao.insertUser(newUser,(data)=>{
         if (data){
-            res.send("SE AGREGO CORRECTAMENTE")
+            res.redirect('https://hotelesperroscanahueca.herokuapp.com')
         }else{
-            res.send("FALLO")
+            res.redirect('https://hotelesperroscanahueca.herokuapp.com/users/register')
         }
     })
 }
