@@ -19,4 +19,10 @@ router.post('/cambio',controllerUser.pageUpdate_cambioContrasena_action)
 
 router.post('/elimino',controllerUser.pageUpdate_eliminoCuenta_action)
 
+router.post('/confirmReservation', function (req, res, next) {
+    let {valor} = req.body;
+    console.log('Si entra al metodo');
+    res.render('reservation', {valor:valor});
+});
+
 module.exports = router;
