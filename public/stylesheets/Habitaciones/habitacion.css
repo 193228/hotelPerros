@@ -4,19 +4,19 @@
 }
 
 .principal{
+    top: 17%;
+    left: 0;
     position: absolute;
     background-color: #00BD70;
     width: 100%;
-    height: 80%;
-    top: 20%;
+    height: 83%;
 }
 
 .habitaciones{
     display: inline-grid;
     padding: 10px;
     margin-top: 14%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 9%;
     width: 20%;
     height: 30%;
     grid-auto-rows: auto;
@@ -30,4 +30,30 @@
 
 #precio{
     color: #FF0000;
+}
+
+#botonAceptar{
+    position: absolute;
+    bottom: 20%;
+    left: 47.5%;
+    width: 10%;
+    height: 6%;
+}
+
+.imagenE{
+    position: absolute;
+    top: 5%;
+    left: 15%;
+}
+
+.imagenN{
+    position: absolute;
+    top: 5%;
+    left: 44%;
+}
+
+.imagenV{
+    position: absolute;
+    top: 5%;
+    left: 75%;
 }

@@ -1,0 +1,15 @@
+body{
+    /*color: red;*/
+    background: url(../images/recervation.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container{
+    opacity: 0.90;
+}
+
+.Mensaje{
+    background-color:rgb(148, 247, 0);
+    position: relative;
+    
+  }

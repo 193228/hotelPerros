@@ -1,0 +1,109 @@
+h1 {
+    position: relative;
+    display: inline-block;
+    left: 20px;
+    top: 150px;
+    font-family: cursive;
+    color: orange
+}
+
+.enlaceInicioSesion {
+    position: relative;
+    display: inline-block;
+    left: 945px;
+    top: 150px;
+    font-family: cursive;
+    color: blue
+}
+
+.logo {
+    position: absolute;
+    display: inline-block;
+    left: 200px;
+    top: 5px;
+    z-index: 1;
+}
+
+body {
+    margin: 10px 50px;
+}
+
+.barraNavegacion {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    text-align: center;
+	width: 1536px;
+    height: 130px;
+    margin: 20px 20px;
+    background-color: lime;
+}
+
+.barraNavegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+    display: inline-block;
+    width: 220px;
+    top: 30px;
+    left: 140px;
+    text-align: center;
+}
+
+.menu > li > a {
+	display: block;
+	padding: 20px;
+	color: black;
+    font-family: 'Open sans';
+    font-size: larger;
+	text-decoration: none;
+}
+
+.menu li a:hover {
+	color: whitesmoke;
+	transition: all .3s;
+}
+
+#actual {
+    color: whitesmoke;
+}
+
+#caja1 {
+    position: absolute;
+    top: 260px;
+    left: 70px;
+
+    width: 700px;
+    height: 500px;
+
+    display: inline-block;
+}
+
+#caja2 {
+    position: absolute;
+    top: 260px;
+    left: 830px;
+
+    width: 600px;
+    height: 500px;
+
+    display: inline-block;
+}
+
+p {
+    font-size: larger;
+    font-family: cursive;
+}
+
+.icono {
+    position: relative;
+    left: 10px;
+}
+
+.descripcion {
+    position: relative;
+    left: 80px;
+    bottom: 40px;
+}

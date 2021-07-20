@@ -1,9 +1,22 @@
 var express = require('express');
 var router = express.Router();
+const controllerUser = require('../controllers/paginaLogin')
 
 /* GET users listing. */
-router.get('/sesion', function(req, res, next) {
-  res.send('Login/usuario');
-});
+router.get('/register',controllerUser.pageRegistro)
+
+router.post('/add',controllerUser.pageRegistro_agregarUsuario)
+
+router.get('/login',controllerUser.pageLogin)
+
+router.post('/validate',controllerUser.validacion)
+
+router.get('/login/cambioContrasena',controllerUser.pageUpdate_cambioContrasena)
+
+router.get('/login/eliminoCuenta',controllerUser.pageUpdate_eliminoCuenta)
+
+router.post('/cambio',controllerUser.pageUpdate_cambioContrasena_action)
+
+router.post('/elimino',controllerUser.pageUpdate_eliminoCuenta_action)
 
 module.exports = router;

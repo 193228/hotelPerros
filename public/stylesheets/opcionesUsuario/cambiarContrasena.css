@@ -50,14 +50,14 @@
 
 #mensaje_error_login{
     position: absolute;
-    top: 18.5%;
-    left: 24%;
+    top: 70%;
+    left: 32.4%;
     font-family: Cambria;
 }
 
 #username{
     position: absolute;
-    margin-top: 30%;
+    margin-top: 25%;
     left: 13%;
     width: 70%; height: 8%;
     border-radius: 15px;
@@ -65,7 +65,15 @@
 
 #password{
     position: absolute;
-    margin-top: 48%;
+    margin-top: 40%;
+    left: 13%;
+    width: 70%; height: 8%;
+    border-radius: 15px;
+}
+
+#newPassword{
+    position: absolute;
+    margin-top: 55%;
     left: 13%;
     width: 70%; height: 8%;
     border-radius: 15px;
@@ -75,7 +83,7 @@
     position: absolute;
     width: 30%;
     height: 8%;
-    margin-top: 68%;
+    margin-top: 80%;
     left: 34%;
     border-radius: 15px;
     background-color: #1AB188;
@@ -84,21 +92,21 @@
 #cambioContraseña{
     position: absolute;
     left: 10%;
-    top: 86%;
+    top: 82%;
+    color: white;
+}
+
+#devolverContraseña{
+    position: absolute;
+    left: 60%;
+    top: 82%;
     color: white;
 }
 
 #eliminarCuenta{
     position: absolute;
-    left: 60%;
-    top: 86%;
-    color: white;
-}
-
-#registrarse{
-    position: absolute;
-    left: 40%;
-    top: 94%;
+    left: 38%;
+    top: 92%;
     color: white;
 }
 

@@ -1,0 +1,56 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Inicio
+    link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous")
+    link(rel='stylesheet' href='/stylesheets/inicio.css')
+header
+    nav.barraNavegacion
+        #lista
+            ul.menu
+                li#actual
+                    a(href='https://hotelesperroscanahueca.herokuapp.com/') Inicio
+                li#noActual
+                    a(href='https://hotelesperroscanahueca.herokuapp.com/users/login') Reservaciones
+                li#noActual
+                    a(href='https://hotelesperroscanahueca.herokuapp.com/habitaciones') Precios
+                li#noActual
+                    a(href='https://hotelesperroscanahueca.herokuapp.com/') Reseñas
+    img.logo(src='/images/perros/perros.png' alt='Foto del Logo de la Pagina' width='120' height='120')
+h1 Hotel para Perros
+//a.enlaceInicioSesion(href='iniciarSesion.html') Iniciar Sesion
+#caja1
+    p
+        | Nos encargamos de tus perros, ofrecemos un servicio de hosperaje de calidad para tus caninos,
+        | todo mientras tu estes fuera de casa, de vacaciones, en el trabajo, entre otros. Te brindamos
+        | nuestra prestigiada confianza para que tu no tengas que preocuparte por tus mascotas cuando
+        | estes ocupado! Disponemos de opciones economicas, hasta de lujuria, &iexcl;checa nuestros precios y
+        | reserva ya!
+    br
+    img.icono(src='/images/perros/ubicacion.png' alt='Icono de ubicacion' width='50' height='50')
+    p.descripcion Encuentranos en la Altura, Ca&ntilde;a Hueca.
+    img.icono(src='/images/perros/horario.png' alt='Icono de reloj' width='50' height='50')
+    p.descripcion &iexcl;Abierto todos los dias! De 9:00am hasta 9:00pm.
+    img.icono(src='/images/perros/sobre.png' alt='Icono de sobre' width='50' height='50')
+    p.descripcion Contactenos para mas informacion: correo@gmail.com
+#caja2
+    #carouselExampleControls.carousel.slide(data-ride='carousel')
+        .carousel-inner
+            .carousel-item.active
+                img.d-block.w-100(src='/images/perros/galeria1.jpg' alt='First slide' height='400')
+            .carousel-item
+                img.d-block.w-100(src='/images/perros/galeria2.jpg' alt='Second slide' height='400')
+            .carousel-item
+                img.d-block.w-100(src='/images/perros/galeria3.jpg' alt='Third slide' height='400')
+            .carousel-item
+                img.d-block.w-100(src='/images/perros/galeria4.jpg' alt='fourth slide' height='400')
+        a.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Previous
+        a.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Next
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js' integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN' crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js' integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q' crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js' integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl' crossorigin='anonymous')

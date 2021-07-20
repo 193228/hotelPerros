@@ -1,0 +1,129 @@
+doctype html
+head
+    link(href='https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css' rel='stylesheet' type='text/css')
+    link(href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/css/datepicker.min.css' rel='stylesheet' type='text/css')
+    link(href='//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/css/bootstrap-switch.css' rel='stylesheet' type='text/css')
+    link(href='https://davidstutz.github.io/bootstrap-multiselect/css/bootstrap-multiselect.css' rel='stylesheet' type='text/css')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js' type='text/javascript')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/js/bootstrap.min.js' type='text/javascript')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/bootstrap-datepicker.min.js' type='text/javascript')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/1.8/js/bootstrap-switch.min.js' type='text/javascript')
+    script(src='https://davidstutz.github.io/bootstrap-multiselect/js/bootstrap-multiselect.js' type='text/javascript')
+    link(rel='stylesheet', href='/stylesheets/retervation.css')
+br
+br
+br
+
+
+
+
+.container
+  .panel.panel-primary.dialog-panel
+    .panel-heading
+      h5 Hotel para perros- Reservacion 
+    .panel-body
+      form.form-horizontal(role='form')
+        .form-group
+          if valor == 1
+            p(class="Mensaje") Recervacion guardada exitosamente
+          label.control-label.col-md-2.col-md-offset-2(for='id_accomodation') Tipo de Habitacion
+          .col-md-2
+            select#id_accomodation.form-control
+              option Tipo Habitacion
+              option Economica
+              option Normal
+              option VIP
+        .form-group
+          label.control-label.col-md-2.col-md-offset-2(for='id_title') Nombre
+          .col-md-8
+            .col-md-2
+              .form-group.internal
+                select#id_title.form-control
+                  option Prefijo
+                  option Joven
+                  option Señor
+                  option Señorita
+                  option Señora
+            .col-md-3.indent-small
+              .form-group.internal
+                input#id_first_name.form-control(placeholder='Nombre(s)' type='text')
+            .col-md-3.indent-small
+              .form-group.internal
+                input#id_last_name.form-control(placeholder='Apellido Paterno' type='text')
+            .col-md-3.indent-small
+              .form-group.internal
+                input#id_last_name.form-control(placeholder='Apellido Materno' type='text')
+        .form-group
+          label.control-label.col-md-2.col-md-offset-2(for='id_email') Contacto
+          .col-md-6
+            .form-group
+              .col-md-11
+                input#id_email.form-control(placeholder='E-mail' type='text')
+            .form-group.internal
+              .col-md-11
+                input#id_phone.form-control(placeholder='Telefono: (xxx) - xxx xxxx' type='text')
+        .form-group
+          label.control-label.col-md-2.col-md-offset-2(for='id_checkin') Entrada
+          .col-md-8
+            .col-md-3
+              .form-group.internal.input-group
+                input#id_adults.form-control.col-md-8(placeholder='1 - 31' type='number')
+                select#id_title.form-control
+                  option Enero
+                  option Febrero
+                  option Marzo
+                  option Abril
+                  option Mayo
+                  option Junio
+                  option Julio
+                  option Agosto
+                  option Septiembre
+                  option Octubre                   
+                  option Noviembre
+                  option Diciembre           
+                select#id_title.form-control
+                  option 2021
+                  option 2022
+                span.input-group-addon
+                  i.glyphicon.glyphicon-calendar
+            label.control-label.col-md-2(for='id_checkout') Salida
+            .col-md-3
+              .form-group.internal.input-group
+                //input#id_checkout.form-control.datepicker
+                input#id_adults.form-control.col-md-8(placeholder='1 - 31' type='number')
+                select#id_title.form-control
+                  option Enero
+                  option Febrero
+                  option Marzo
+                  option Abril
+                  option Mayo
+                  option Junio
+                  option Julio
+                  option Agosto
+                  option Septiembre
+                  option Octubre                   
+                  option Noviembre
+                  option Diciembre    
+                select#id_title.form-control
+                  option 2021
+                  option 2022     
+                span.input-group-addon
+                  i.glyphicon.glyphicon-calendar
+      form.col-12(action="confirmReservation"  method='POST')                  
+        .form-group
+          label.control-label.col-md-2.col-md-offset-2(for='id_pets') ¿Quiere servicio de internet?
+          .col-md-8
+            #id_pets_switch.make-switch(data-off-label='NO' data-on-label='SI')
+              input#id_pets(type='checkbox' value='chk_hydro')
+        .form-group
+          label.control-label.col-md-2.col-md-offset-2(for='id_comments') Algun comentario...?
+          .col-md-6
+            textarea#id_comments.form-control(placeholder='Agregue un comentario si asi lo quiere' rows='3')         
+        .form-group
+          .col-md-offset-4.col-md-3
+
+            input(type='hidden' name="valor" value="1") 
+            button.btn-lg.btn-primary(type='submit') Hacer Recervacion
+          .col-md-3
+            button.btn-lg.btn-danger(style='float:right' type='submit') Cancelar
+              

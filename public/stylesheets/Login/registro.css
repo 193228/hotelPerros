@@ -7,6 +7,13 @@
     background-color: #167B71;
 }
 
+#mensaje_error_login{
+    position: absolute;
+    width:60%;
+    top:88%;
+    left: 20%;
+}
+
 #iconoUsuario{
     left: 30%;
     top: 10%;
@@ -25,7 +32,7 @@
 
 #descripcion{
     position: absolute;
-    left: 13%;
+    left: 17%;
     top: 82%;
     font-size: 30px;
     font-family: Cambria;
@@ -34,30 +41,25 @@
 
 .form-right-box{
     position: absolute;
-    top: 20%;
+    top: 14%;
     width: 35%;
-    height: 70%;
+    height: 75%;
     left: 58%;
     background-color: #24323D;
     border-radius: 52px;
 }
 
-#perfil{
+#fullname{
     position: absolute;
-    left: 34%;
-    top:-16%
-}
-
-#mensaje_error_login{
-    position: absolute;
-    top: 18.5%;
-    left: 24%;
-    font-family: Cambria;
+    margin-top: 22%;
+    left: 13%;
+    width: 70%; height: 8%;
+    border-radius: 15px;
 }
 
 #username{
     position: absolute;
-    margin-top: 30%;
+    margin-top: 42%;
     left: 13%;
     width: 70%; height: 8%;
     border-radius: 15px;
@@ -65,7 +67,7 @@
 
 #password{
     position: absolute;
-    margin-top: 48%;
+    margin-top: 61%;
     left: 13%;
     width: 70%; height: 8%;
     border-radius: 15px;
@@ -73,32 +75,20 @@
 
 #botonAceptar{
     position: absolute;
-    width: 30%;
+    width: 80%;
     height: 8%;
-    margin-top: 68%;
-    left: 34%;
+    margin-top: 80%;
+    left: 10%;
     border-radius: 15px;
     background-color: #1AB188;
 }
 
-#cambioContraseña{
+#registroLabel{
     position: absolute;
-    left: 10%;
-    top: 86%;
-    color: white;
-}
-
-#eliminarCuenta{
-    position: absolute;
-    left: 60%;
-    top: 86%;
-    color: white;
-}
-
-#registrarse{
-    position: absolute;
-    left: 40%;
-    top: 94%;
+    left: 32%;
+    top: 5%;
+    font-family: Cambria;
+    font-size: 25px;
     color: white;
 }
 

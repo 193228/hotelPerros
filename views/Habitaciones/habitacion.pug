@@ -3,6 +3,21 @@ extends ../layout
 block content
 
     link(rel='stylesheet', href='/stylesheets/Habitaciones/habitacion.css')
+    link(rel='stylesheet' href='/stylesheets/inicio.css')
+
+    header
+        nav.barraNavegacion
+            #lista
+                ul.menu
+                    li#actual
+                        a(href='https://hotelesperroscanahueca.herokuapp.com/') Inicio
+                    li#noActual
+                        a(href='https://hotelesperroscanahueca.herokuapp.com/users/login') Reservaciones
+                    li#noActual
+                        a(href='https://hotelesperroscanahueca.herokuapp.com/habitaciones') Precios
+                    li#noActual
+                        a(href='https://hotelesperroscanahueca.herokuapp.com/') Reseñas
+        img.logo(src='/images/perros/perros.png' alt='Foto del Logo de la Pagina' width='120' height='120')
 
     .principal
         each sql in data
@@ -12,3 +27,17 @@ block content
                 p#descripcion #{sql.descripcion}
                 br
                 p#precio #{sql.costo+sql.codigoMoneda}
+
+        .boton
+            a(href='https://hotelesperroscanahueca.herokuapp.com/users/login', id="botonAceptar") Reservar
+
+        .imagenE
+            img(src="../../images/perros/economica.jpeg" id="economica", width="30%", height="30%")
+
+        .imagenN
+            img(src="../../images/perros/normal.jpeg" id="normal", width="30%", height="30%")
+
+        .imagenV
+            img(src="../../images/perros/vip.jpeg" id="vip", width="40%", height="50%")
+
+
