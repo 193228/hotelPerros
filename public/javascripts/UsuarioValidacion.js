@@ -5,7 +5,7 @@ function agregarUsuario(req,res,password,newUser) {
     if(password.length<5){
         let alert = require('alert');
         alert("Usuario No Registrado, Minimo 5 letras")
-        res.redirect('/users/register')
+        res.redirect('https://hotelesperroscanahueca.herokuapp.com')
     }else{
         console.log("AGREGATE")
         agregarUsuario_action(req,res,newUser)
