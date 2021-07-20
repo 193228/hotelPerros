@@ -34,8 +34,8 @@ module.exports = {
         let sql = "insert into usuarios (fullname,username,password) values (" + nombre + ',' + usuario + ',' + contrasena + ")"
         pool.query(sql,(err,data)=>{
             if(err) throw err;
-            if(data.length>0) return callback(data[0]);
-            if(data.length==0)
+            if(data) return callback(data);
+            if(!data)
                 return callback(data[err]);
         });
     },

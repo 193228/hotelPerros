@@ -13,8 +13,11 @@ function agregarUsuario(req,res,password,newUser) {
 }
 
 function agregarUsuario_action(req,res,newUser) {
+    console.log(newUser)
     userDao.insertUser(newUser,(data)=>{
+        console.log("DATA: "+data)
         if (data){
+            console.log("ENTREO")
             res.redirect('https://hotelesperroscanahueca.herokuapp.com')
         }else{
             res.redirect('https://hotelesperroscanahueca.herokuapp.com/users/register')
