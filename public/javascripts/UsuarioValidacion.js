@@ -36,14 +36,13 @@ function editarUsuario(req,res,username,password,newPassword,id){
     }
 }
 
-function editarUsuario_action(req,res,username,password,newPassword, id){
-    userDao.findUser(username,(data) =>{
-        if(data && bcrypt.compareSync(password,data.password)){
+/*function editarUsuario_action(req,res,d2,d3,d1){
+    userDao.findUser(username,(data) =>{if(data && bcrypt.compareSync(d1,d2,d3)){
             console.log("SI COINCIDE")
-            const cambioContrasena = {username,password,newPassword: bcrypt.hashSync(newPassword,saltRounds), id:data.idusers}
-            userDao.updatePassword(cambioContrasena,(data) =>{})
+            const variable = {username,password,newPassword: bcrypt.hashSync(,saltRounds), id:data.idusers}
+            userDao.updatePassword(cambioContrasena,(info) =>{})
             res.redirect('/')
-        }else if (data && !bcrypt.compareSync(password, data.password)){
+        }else if (data && !bcrypt.compareSync(f, f)){
             req.flash('message'," contraseña incorrecta")
             res.redirect('/users/login/cambioContrasena')
         }
@@ -52,7 +51,7 @@ function editarUsuario_action(req,res,username,password,newPassword, id){
             res.redirect('/users/login/cambioContrasena')
         }
     });
-}
+}*/
 
 function eliminarUsuario(req,res,username,password,id){
     userDao.findUser(username,(data) => {

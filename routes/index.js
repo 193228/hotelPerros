@@ -16,5 +16,10 @@ router.get('/reservacion', function(req, res, next) {
   res.render('reservation', { title: 'Express' });
 });
 
+router.get('/infoStudents', function(req, res, next) {
+  res.render('infoStudents', {title: 'Informacion'})
+});
+
+
 
 module.exports = router;
